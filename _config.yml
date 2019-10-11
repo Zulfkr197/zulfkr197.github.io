@@ -1,0 +1,41 @@
+name: Zulfikar
+description: Blog Pribadi.
+meta_description: "Blog pribadi, zulfkr"
+
+aboutPage: true
+
+markdown: kramdown
+highlighter: rouge
+
+plugins: [jekyll-paginate]
+paginate: 20
+domain_name: 'https://zulfkr.my.id/'
+google_analytics: 'UA-140855615-1'
+disqus: false
+disqus_shortname: 'zulfkr197'
+
+# Details for the RSS feed generator
+url:            'https://zulfkr.my.id/'
+author:         'zulfkr'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
