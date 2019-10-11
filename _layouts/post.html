@@ -2,8 +2,6 @@
 layout: default
 archive: true
 ---
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v4.0"></script>
 
 <article class="post">
     <header>
@@ -35,11 +33,6 @@ archive: true
         {% include disqus.html %}
     </div>
 {% endif %}
-
-    <div class="archive readmore">
-        <h3>Komentar</h3>
-        <div class="fb-comments" data-href="{{ site.baseurl }}{{ post.url }}" data-width="100%" data-numposts="10"></div>
-    </div>
 
 <!-- Archive post list -->
 {% if page.archive %}
