@@ -23,9 +23,9 @@ maka nilai **0.5 em** adalah **0.5 x 16px = 8px**.
 
 Contoh 2 :
 {% highlight html %}
-&lt;body&gt;&#10;
-    &lt;div class=&quot;wrapper&quot;&gt;Konten&lt;/div&gt;
-&#10;&lt;/body&gt;
+<body>
+    <div class="wrapper">Isi Kontent</div>
+</body>
 {% endhighlight %}
 
 {% highlight css %}
