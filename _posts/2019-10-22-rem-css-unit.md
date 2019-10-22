@@ -4,17 +4,17 @@ date          : 2019-10-22 0:10:00
 description   : belajar menggunakan nilai satuan rem (root em) css units
 ---
 
-setelah saya memposting css satuan em sebelumnya, kali ini saya akan membahas tentang nilai satuan **REM**.
+setelah saya memposting [css satuan em sebelumnya](https://zulfkr.my.id/2019/belajar-nilai-satuan-em-css-unit/), kali ini saya akan membahas tentang nilai satuan **REM**.
 
 pada mulanya **rem** ini masih sangat asing bagi saya karena saya belum tau cara menggunakanya dan pada saat tertentu saya tidak sengaja membaca sebuah artikel dari [sitepoint](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) tentang **rem**
 
-dan ternyata sangat mudah dipahami seperti pengunaan pixel. dan juga satuan ini sangat sering digunakan oleh developer luar negri.
+dan ternyata sangat mudah dipahami seperti pengunaan px (pixel). dan juga satuan ini sangat sering digunakan oleh developer luar negri dalam mendesain sebuah blog.
 
 rem singkatan dari **root em**, satuan ini sangat berbeda dengan em yang dimana nilainya terpaku pada font-size didalam selektor yang sama atau diatas elementnya / induk (parent).
 
 **nilai rem** hanya terpaku pada font-size di element root yaitu ```<html>```. dan nilai default ```1rem``` yaitu ```16px``` karena nilai default html adalah 16px.
 
-** bukti gambar inspek element **
+![css rem units](https://zulfkr.my.id/assets/post/rem-css-units-1.png)
 
 ### Contoh Kasus Penggunaan rem
 
