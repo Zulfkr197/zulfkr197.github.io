@@ -1,7 +1,7 @@
 ---
-title         : "Belajar Satuan em pada CSS Unit"
+title         : "Belajar Satuan em CSS Unit"
 date          : 2019-10-19 01:10:00
-description   : belajar tentang nilai satuan em pada CSS Unit
+description   : belajar menggunakan nilai satuan em untuk blog atau web design
 ---
 
 sebagai developer web kita pasti sering melihat nilai em pada css.
