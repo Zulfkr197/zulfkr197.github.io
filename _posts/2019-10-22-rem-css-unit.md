@@ -18,7 +18,7 @@ rem singkatan dari **root em**, satuan ini sangat berbeda dengan em yang dimana 
 
 ### Contoh Kasus Penggunaan rem
 
-berikut contoh saya ingin mengatur nilai font-size pada body 12px tapi menggunakan rem.
+berikut contoh saya ingin mengatur nilai font-size pada **body 12px** tapi menggunakan rem. dan disini **root 16px**
 
 ```css 
 html {
@@ -30,6 +30,20 @@ body{
 ```
 
 maka nilai **0.75rem** adalah **12px**. karena **12px / 16px = 0.75 rem**
+
+kasus lain yang memiiki nilai terlalu banyak yaitu **root 17px** dan **body 13px**
+```css 
+html {
+  font-size:17px;
+}
+body{
+  font-size:0.7647058823529412‬rem;
+}
+```
+tapi error, saya gak tau penyebabnya. invalid property valued. 
+
+sehingga saya menyarankan menggunakan [rem calculator](https://offroadcode.com/rem-calculator)
+dengan memiliki hasil yang berbeda dan lebih sedikit nilainya yaitu **13px = 0.7647rem**
 
 ### Rumus Konversi Nilai Rem ke Px atau Sebaliknya
 
@@ -50,7 +64,8 @@ Catatan :
 * px = nilai px
 * rem = nilai rem
 
-### Trick Rem Rasa Px
+<br>
+### Trick atau Solusi Rem Rasa Px
 
 ada juga metode gampang bagi anda yang ingin menerapkan rem tapi seperti menggunakan px.
 
@@ -73,6 +88,9 @@ h1 {
 h2 {
   font-size:1.8rem; /* 18px */
 }
+h3 {
+  font-size:1rem; /* 10px */
+}
 ```
 
 kesimpulannya seperti **16px** menjadi **1.6rem** atau **30px** menjadi **3.0rem**
@@ -87,7 +105,6 @@ Referensi :
 - https://webdesign.tutsplus.com/id/articles/7-css-units-you-might-not-know-about--cms-22573
 
 <!--
-
 nilai root / nilai px = persen rem
 10 / 16 = 0.625
 -------------------
@@ -95,5 +112,4 @@ nilai persen * nilai font = nilai rem
 0.0625
 
 20 px / 16 r = 1.25 rem (cocok)
-
 -->
