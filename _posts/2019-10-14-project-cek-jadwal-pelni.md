@@ -14,8 +14,6 @@ saya juga telah mencari celah untuk menggunakan metode ajax yang berakhir frusta
 
 berikut screenshot tools sederhana ini.
 
-![cek jadwal pelni](https://zulfkr.my.id/assets/post/cek-jadwal-pelni-1.png)
-<br>
 ![cek jadwal pelni](https://zulfkr.my.id/assets/post/cek-jadwal-pelni-2.png)
 
 sekian artikel saya,
