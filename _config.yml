@@ -11,7 +11,7 @@ plugins: [jekyll-paginate]
 paginate: 20
 domain_name: 'https://zulfkr.my.id/'
 google_analytics: 'UA-140855615-1'
-disqus: false
+disqus: true
 disqus_shortname: 'zulfkr197'
 
 # Details for the RSS feed generator
