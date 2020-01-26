@@ -158,6 +158,7 @@ h2.month{width:100%;font-weight:700;font-size:13px;text-transform:uppercase;marg
 #sharing a.facebook{background:#4361b3}
 #sharing a.twitter{background:#4fafed}
 #sharing a{font-size:20px;font-size:13px;font-weight:700;color:#fff;padding:6px 10px;border-radius:4px;margin-left:2px}
+.btn-dl{border:2px solid;padding:10px 25px;display:inline-block;letter-spacing:.5px;margin:5px 0}
 /* Media Queries */
 @media screen and (max-width: 540px) {
 #wrapper{padding:20px}#header{margin-bottom:60px;border-bottom:1px solid #eee}.post{margin:40px 0}#footer{margin-top:60px}#post-list,#archive-list{margin-top:0}#post-meta{margin-top:60px}#title{font-size:17px}#post-list .dates{display:none}#post-list-footer{margin-top:20px;padding-top:40px}h1{font-size:26px}.post h2.headline{font-size:13px}.post h1{font-size:24px}.post h2{font-size:20px}
