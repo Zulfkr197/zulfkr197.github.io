@@ -9,7 +9,7 @@ postingan kali ini saya akan membagikan vektor ulas kami digoogle untuk dijadika
 keuntungannya yaitu bisnis tersebut akan terkenal dipencarian google dan membantu pengunjung baru untuk melihat suasana atau review dari orang yang pernah membeli.
 <br><br>
 ![Ulas toko kami](/assets/post/Ulas%20Toko%20Kami%20di%20Google.png#center)
-<div style='display:block;text-align:center;'><a href="http://zulfkr.my.id/external/Files/Vektor%20Ulas%20Toko%20Kami%20di%20Google.svg">Download</a><br>
+<div style='display:block;text-align:center;'><a href="http://zulfkr.my.id/external/Files/Vektor%20Ulas%20Toko%20Kami%20di%20Google.svg" class="btn-dl">Download</a><br>
 <i>Jika tidak otomatis download, tekan tombol CTRL + S (save)</i></div>
 <br>
 dan untuk filenya berbentuk svg ini mudah diubah / dimodifikasi dan dapat dibuka di coreldraw dan inkscape(free), setelah diubah tinggal di ekspor menjadi gambar (.png) kemudian masukan di office word, lalu di print. (jangan lupa menggunakan kertas foto stiker yang bisa ditempel langsung dan setting high quality color).
