@@ -1,7 +1,7 @@
 ---
-title         : "Vektor Logo Ulas Kami di Google"
+title         : "Vektor Logo Ulas Toko Kami di Google"
 date          : 2020-01-26 04:05:00
-description   : download file svg vektor logo ulas kami digoogle
+description   : download file svg vektor logo ulas toko kami di google
 ---
 
 postingan kali ini saya akan membagikan vektor ulas kami digoogle untuk dijadikan stiker, yang menurut saya berguna buat pengusaha agar pengunjung/pembeli dapat memberikan ulasannya / rating tentang bisnisnya digoogle.
