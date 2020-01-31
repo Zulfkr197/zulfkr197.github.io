@@ -1,6 +1,6 @@
 ---
 title         : "Cara Menghapus Latar Belakang Foto Otomatis"
-date          : 2019-11-07 19:27:00
+date          : 2020-01-27 19:27:00
 description   : jaman dulu hapus latar belakang itu susah banget,, pake photoshop lagi, sekarang udh gampang otomatis gak pake telor.
 ---
 
@@ -16,13 +16,13 @@ berikut 2 website yang bisa menghapus latar belakang secara otomatis, *catatan :
 
 ![hapus latar belakang foto](/assets/post/hapus-latar-belakang-foto-1.png)
 
-Remove.bg merupakan salah satu tools yang terkenal yang dapat menghapus gambar latar belakang dengan mudah, tidak hanya digunakan secara online (website),remove.bg juga tersedia versi dalam bentuk aplikasi untuk windows dan mac os,, secara gratis namun ada batasnya.
+[Remove.bg](https://remove.bg) merupakan salah satu tools yang terkenal yang dapat menghapus gambar latar belakang dengan mudah, tidak hanya digunakan secara online (website),remove.bg juga tersedia versi dalam bentuk aplikasi untuk windows dan mac os,, secara gratis namun ada batasnya.
 
 ### Clippingmagic.com
 
 ![hapus latar belakang foto](/assets/post/hapus-latar-belakang-foto-2.png)
 
-Clippingmagic.com juga tools yang patut dicoba, berbeda dengan remove.bg yang menghapus latar belakang langsung jadi tanpa proses edit, clippingmagic bisa mengatur area yang dihilangkan dan ditambahkan sesuai keinginanmu.
+[Clippingmagic.com](https://clippingmagic.com) juga tools yang patut dicoba, berbeda dengan remove.bg yang menghapus latar belakang langsung jadi tanpa proses edit, clippingmagic bisa mengatur area yang dihilangkan dan ditambahkan sesuai keinginanmu.
 
 ![hapus latar belakang foto](/assets/post/hapus-latar-belakang-foto-3.png)
 
