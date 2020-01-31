@@ -12,13 +12,13 @@ dulu menghapus latar belakang menjadi transparant tidaklah mudah, perlu mengguna
 
 berikut 2 website yang bisa menghapus latar belakang secara otomatis, *catatan : ada beberapa kecatatan selamat proses tergantung foto anda, kalau rame mungkin terdapat kecatatan manum bisa diedit secara manual*
 
-### Remove.bg
+### [Remove.bg](https://remove.bg)
 
 ![hapus latar belakang foto](/assets/post/hapus-latar-belakang-foto-1.png)
 
 [Remove.bg](https://remove.bg) merupakan salah satu tools yang terkenal yang dapat menghapus gambar latar belakang dengan mudah, tidak hanya digunakan secara online (website),remove.bg juga tersedia versi dalam bentuk aplikasi untuk windows dan mac os,, secara gratis namun ada batasnya.
 
-### Clippingmagic.com
+### [Clippingmagic.com](https://clippingmagic.com)
 
 ![hapus latar belakang foto](/assets/post/hapus-latar-belakang-foto-2.png)
 
