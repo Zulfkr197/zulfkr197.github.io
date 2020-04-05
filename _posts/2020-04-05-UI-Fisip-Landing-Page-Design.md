@@ -15,15 +15,17 @@ selama membuat desain ini saya belajar banyak tentang metode ux dan desain ui ya
 
 baiklah untuk hasilnya dibawah ini.
 
-![UI Fisip](/assets/post/UI-FISIP-1.png)
+<a href="/assets/post/UI-FISIP-1.png"><img src="/assets/post/UI-FISIP-1.png" alt="UI Fisip"></a>
+<i style="display:block;text-align:center;margin:0 auto;">(Homepage)</i>
 
-![UI Fisip](/assets/post/UI-FISIP-2.png)
+<a href="/assets/post/UI-FISIP-2.png"><img src="/assets/post/UI-FISIP-2.png" alt="UI Fisip"></a>
+<i style="display:block;text-align:center;margin:0 auto;">(Post / Artikel)</i>
 
 sebenarnya masih banyak desain halaman yang saya buat, dan salah satunya juga desain untuk mobile. cuman saya males ngedit lagi isi kontennya untuk dijadikan contoh.
 
 cukup dari jarak jauh aja.
 
-![UI Fisip](/assets/post/UI-FISIP-3.png)
+<a href="/assets/post/UI-FISIP-3.png"><img src="/assets/post/UI-FISIP-3.png" alt="UI Fisip"></a>
 
 baik, terima kasih telah melihat desain saya.
 semoga bermanfaat.
