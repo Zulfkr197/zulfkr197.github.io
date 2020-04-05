@@ -1,5 +1,5 @@
 ---
-title           : "Project - Cek Jadwal Kapal Pelni"
+title           : "(UI) Jadwal Pelni - Landing Page Design"
 date            : 2019-10-14
 description     : proyek iseng menggunakan framework laravel
 ---
