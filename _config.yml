@@ -1,6 +1,6 @@
 name: Zulfikar
-description: Blog Pribadi.
-meta_description: "Blog pribadi, zulfkr"
+description: Portofolio.
+meta_description: "Portofolio Zulfikar"
 
 aboutPage: true
 
@@ -11,8 +11,6 @@ plugins: [jekyll-paginate]
 paginate: 20
 domain_name: 'https://zulfkr.my.id/'
 google_analytics: 'UA-140855615-1'
-disqus: true
-disqus_shortname: 'zulfkr197'
 
 # Details for the RSS feed generator
 url:            'https://zulfkr.my.id/'
@@ -29,7 +27,7 @@ defaults:
             layout: default
     -
         scope:
-            path: "" # empty string for all files
+            path: "blog" # empty string for all files
             type: posts
         values:
             layout: post
