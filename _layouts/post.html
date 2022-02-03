@@ -21,19 +21,7 @@ archive: true
             <span>{{ site.description }}</span>
         </div>
     </a>
-
-    <section id="sharing">
-        {% include share.html %}
-    </section>
 </footer>
-
-<!-- Disqus comments -->
-{% if site.disqus %}
-    <div class="archive readmore">
-        <h3>Comments</h3>
-        {% include disqus.html %}
-    </div>
-{% endif %}
 
 <!-- Archive post list -->
 {% if page.archive %}
