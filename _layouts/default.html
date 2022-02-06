@@ -9,33 +9,77 @@
   <link rel="shortcut icon" href="{{ "/" | relative_url  }}assets/images/favicon.ico">
   <link rel="stylesheet" href="{{ "/" | relative_url  }}assets/css/style.css">
   <link rel="alternate" type="application/rss+xml" title="My Blog" href="{{ "/" | relative_url  }}feed.xml">
-  <link rel="stylesheet" href="{{ "/" | relative_url  }}assets/css/highlight.css">
   <script data-ad-client="ca-pub-7933244691494165" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class='bg-slate-50 m-0'>
+  
+    <section class="hero-section leading-relaxed" id="hero">
+        <div class="container px-10 py-20 mx-auto">
+            <div class="header flex flex-col lg:flex-row">
+                <div class="title font-bold tracking-widest	text-xl lg:text-lg text-kuning-600 text-center lg:text-left mb-4 lg:mb-0">ZULFIKAR</div>
+                <nav class="nav lg:ml-auto">
+                    <ul class="font-medium tracking-wide flex gap-3 lg:gap-10 flex-col lg:flex-row bg-black/10 lg:bg-transparent p-8 lg:p-0 rounded-md">
+                        <li><a href="https://zulfkr.my.id/" class="text-kuning-600 font-semibold">Beranda</a></li>
+                        <li><a href="#proyek" class="text-white">Proyek</a></li>
+                        <li><a href="#contact" class="text-white">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content py-12 grid grid-cols-6 gap-4 justify-items-center">
+                <div class="heading col-span-6 lg:col-span-3 text-slate-100 my-auto">
+                    <h1 class="text-3xl lg:text-5xl text-kuning-600 font-bold leading-relaxed text-center lg:text-left">Bangun Proyek Impian<br>Bersama Kami</h1>
+                    <p class="block pt-6 pb-8 text-slate-200 leading-loose text-base lg:text-lg">Saya Zulfikar, Seorang freelancer dibidang Web Developer & Wordpress Developer memiliki 2+ tahun pengalaman, Bertempat tinggal di Sulawesi Tenggara, Indonesia. Kami siap membantu membangun projek impian anda.</p>
+                    <a class="block lg:inline-block text-center lg:text-left bg-kuning-600 hover:bg-slate-700 hover:text-white rounded-full py-4 px-10 font-bold tracking-wider text-sm uppercase text-slate-700" href="assets/CV Zulfikar - Web Developer.pdf"><svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor"> <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>Unduh CV</a>
+                </div>
+                <div class="avatar col-span-6 lg:col-span-3 ml-auto hidden lg:block">
+                    <img src="{{ "/" | relative_url  }}assets/images/avatar.png" alt="Zulfikar">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  {% if page.profile %}
-      {% include profile.html %}
-  {% endif %}
+    <section class="proyek" id='proyek'>
+        <div class="container px-10 py-24 mx-auto">
+            <div class="heading text-slate-700 tracking-wide pt-6 pb-16">
+                <h1 class="text-3xl font-bold text-biru-600">Proyek Pilihan</h1>
+                <p class="text-base pt-4 leading-relaxed">Beberapa proyek yang telah kami kerjakan.<br>Untuk melihat lebih banyak silahkan klik <a href="/portofolio" class="font-semibold underline underline-offset-2">Lihat Portofolio 👉</a></p>
+            </div>
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+    </section>
+  
+    <section class="contact bg-biru-600 text-white" id="contact">
+        <div class="container px-10 py-20 mx-auto leading-relaxed">
+            <div class="heading tracking-wide">
+                <h1 class="text-3xl font-bold">Ayo Saling Terhubung</h1>
+                <p class="pt-4 text-slate-200">Jika anda tertarik, silahkan menghubungi email kami ✉ <a class="underline underline-offset-2" href="mailto:zulfkr197@gmail.com">zulfkr197@gmail.com</a> <br> atau melalui media sosial kami</p>
+            </div>
+            <div class="medsos pt-6 pb-12">
+                <ul class="flex flex-col lg:flex-row gap-6 lg:gap-12">
+                    <li><a href="https://www.facebook.com/zulfikar197" target="_new"><svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 mr-3 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm16 7h-1.923c-.616 0-1.077.252-1.077.889v1.111h3l-.239 3h-2.761v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg><span>zulfikar197</span></a></li>
+                    <li><a href="https://wa.me/6281387672887?text=Halo" target="_new"><svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 mr-3 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg><span>0813 8767 2887</span></a></li>
+                </ul>
+            </div>
+            <div class="copyright text-slate-200 opacity-90">Desain oleh Saya, menggunakan Figma, Tailwind Color, Mockup oleh Koy Carraway, dan Dribble untuk insprirasi.</div>
+        </div>
+    </section>
 
-  <section id="wrapper" class="{% if page.profile %}home{% endif %}">
-    {{ content }}
-  </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="{{ "/" | relative_url  }}assets/js/main.js"></script>
-  <script src="{{ "/" | relative_url  }}assets/js/highlight.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', '{{ site.google_analytics }}', 'auto');
-    ga('send', 'pageview');
-  </script>
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
 </body>
 </html>
 
