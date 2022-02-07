@@ -43,12 +43,12 @@
     <section class="proyek" id='proyek'>
         <div class="container px-10 py-24 mx-auto">
             <div class="heading text-slate-700 tracking-wide pt-6 pb-16">
-                {% if page.portofolio == "true" %}
-                <h1 class="text-3xl font-bold text-biru-600">Proyek Pilihan</h1>
-                <p class="text-base pt-4 leading-relaxed">Beberapa proyek yang telah kami kerjakan.<br>Untuk melihat lebih banyak silahkan klik <a href="/portofolio" class="underline underline-offset-2"><span class="font-semibold">Lihat Portofolio</span> 👉</a></p>
+                {% if site.portofolio == "true" %}
+                  <h1 class="text-3xl font-bold text-biru-600">Daftar Proyek</h1>
+                  <p class="text-base pt-4 leading-relaxed">Proyek yang telah kami kerjakan.</p>
                 {% else %}
-                <h1 class="text-3xl font-bold text-biru-600">Daftar Proyek</h1>
-                <p class="text-base pt-4 leading-relaxed">Proyek yang telah kami kerjakan.</p>
+                  <h1 class="text-3xl font-bold text-biru-600">Proyek Pilihan</h1>
+                  <p class="text-base pt-4 leading-relaxed">Beberapa proyek yang telah kami kerjakan.<br>Untuk melihat lebih banyak silahkan klik <a href="/portofolio" class="underline underline-offset-2"><span class="font-semibold">Lihat Portofolio</span> 👉</a></p>
                 {% endif %}
             </div>
             <div class="content">
