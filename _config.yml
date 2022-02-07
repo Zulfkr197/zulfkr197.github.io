@@ -8,7 +8,7 @@ markdown: kramdown
 highlighter: rouge
 
 plugins: [jekyll-paginate]
-paginate: 999
+paginate: 2
 domain_name: 'https://zulfkr.my.id/'
 google_analytics: 'UA-140855615-1'
 
@@ -27,7 +27,7 @@ defaults:
             layout: default
     -
         scope:
-            path: "blog" # empty string for all files
+            path: "portofolio" # empty string for all files
             type: posts
         values:
             layout: post
