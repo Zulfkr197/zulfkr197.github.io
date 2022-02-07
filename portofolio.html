@@ -6,7 +6,6 @@ portofolio: true
 ---
 
     {% for post in site.posts %}
-    <div class="content grid grid-cols-2 gap-12">
       <div class="post col-span-2 lg:col-span-1">
           <div class="thumbnail relative col-span-5 lg:col-span-3 mb-4 lg:mb-8">
               <img src="{{ post.thumbnail }}"/>
@@ -21,5 +20,4 @@ portofolio: true
               <p class="leading-loose text-slate-500">{{ post.description }}</p>
           </div>
       </div>
-    </div>
     {% endfor %}
