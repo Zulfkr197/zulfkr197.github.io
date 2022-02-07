@@ -4,7 +4,7 @@ permalink: portofolio/
 profile: true
 ---
 
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       <div class="post grid grid-cols-5 gap-12 pb-24">
           <div class="body col-span-5 lg:col-span-2 my-auto">
               <span class="bg-biru-600 font-semibold tracking-wide rounded-full py-1.5 px-4 text-sm text-white inline-block">{{ post.date | date:"%Y" }}</span>
