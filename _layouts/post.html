@@ -82,7 +82,13 @@ archive: true
 	</div>
 
 	<div class="post-content text-slate-600">
-		{{content}}
+	{% if content %}
+		{{ content }}
+	{% else %}
+		<div class="thumbnail rounded-md bg-thumb rounded-md overflow-hidden border border-bone-outline shadow-sm">
+			<img class="mx-auto" src="{{ page.thumbnail }}">
+		</div>
+	{% endif %}
 	</div>
 
 <!-- Archive post list -->
