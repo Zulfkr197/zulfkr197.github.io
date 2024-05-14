@@ -16,31 +16,40 @@ archive: true
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">System</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">Laravel</div>
+				{% assign system = page.system | split: ', ' %}
+				{% for row_system in system %}
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_system }}</div>
+				{% endfor %}
 				</div>
 			</div>
 
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">Tools</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">Figma</div>
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">VS Code</div>
+				{% assign tools = page.tools | split: ', ' %}
+				{% for row_tools in tools %}
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_tools }}</div>
+				{% endfor %}
 				</div>
 			</div>
 			
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">Front End</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">Tailwind CSS</div>
+				{% assign frontend = page.frontend | split: ', ' %}
+				{% for row_frontend in frontend %}
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_frontend }}</div>
+				{% endfor %}
 				</div>
 			</div>
 			
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">Back End</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">PHP</div>
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">MySQL</div>
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">PgSQL</div>
+				{% assign backend = page.backend | split: ', ' %}
+				{% for row_backend in backend %}
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_backend }}</div>
+				{% endfor %}
 				</div>
 			</div>
 
