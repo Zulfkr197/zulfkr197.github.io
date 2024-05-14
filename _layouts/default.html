@@ -79,17 +79,19 @@
 	<section class="bg-bone-surface py-24 lg:py-32 border-y border-bone-outline">
 		<div class="flex flex-col gap-16 mx-auto max-w-screen-xl px-6 sm:px-10 xl:px-0">
 
-			{% unless page.title == "Projects" %}
+			{% unless page.title %}
 			<div class="heading text-center">
-				{% if page.projects %}
-					<h3 class="font-heading leading-relaxed pb-2 text-4xl font-medium">My Project</h3>
-					<p class="text-slate-600 leading-relaxed">Check out some recent examples of my works <br> that combine creativity and technical skills</p>
-				{% else %}
-					<h3 class="font-heading leading-relaxed pb-2 text-4xl font-medium">Recent Project</h3>
-					<p class="text-slate-600 leading-relaxed">Some of the projects we have worked on.<br><a class="font-semibold text-main border-b-2 border-main hover:text-main-hover" href="/projects">See All ⚡</a></p>
-				{% endif %}
+				<h3 class="font-heading leading-relaxed pb-2 text-4xl font-medium">Recent Project</h3>
+				<p class="text-slate-600 leading-relaxed">Some of the projects we have worked on.<br><a class="font-semibold text-main border-b-2 border-main hover:text-main-hover" href="/projects">See All ⚡</a></p>
 			</div>
 			{% endunless %}
+			
+			{% if page.title == "Projects" %}
+			<div class="heading text-center">
+				<h3 class="font-heading leading-relaxed pb-2 text-4xl font-medium">My Project</h3>
+				<p class="text-slate-600 leading-relaxed">Check out some recent examples of my works <br> that combine creativity and technical skills</p>
+			</div>
+			{% endif %}
 
 			<!-- Foreach -->
 			<div class="content">
