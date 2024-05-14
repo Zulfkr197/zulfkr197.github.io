@@ -3,25 +3,52 @@ layout: default
 archive: true
 ---
 
-<article class="post">
-    <header>        
-        <span style="margin-bottom:40px;display:block;text-align:center;"><a href="https://zulfkr.my.id/"> <span class="arrow">←</span> Kembali ke halaman utama </a></span>
-        <h1>{{ page.title }}</h1>
-        <h2 class="headline">{{ page.date | date:"%B %-d, %Y" }}</h2>
-    </header>
-    <section id="post-body">
+	<div class="post-header flex flex-col lg:flex-row gap-10 items-center">
+
+		<div class="post-title max-w-2xl">
+			<div class="released inline-block font-medium font-heading bg-main text-white py-1 px-2.5 rounded">{{ page.date | date:"%Y" }}</div>
+			<h1 class="text-slate-800 text-5xl font-medium font-heading pt-2 pb-4">{{ page.title }}</h1>
+			<p class="latar-belakang text-lg leading-relaxed text-slate-600 text-justify">{{ post.description }} || {{ page.description }}</p>
+		</div>
+
+		<div class="post-group mr-auto lg:ml-auto flex flex-col gap-3 font-heading">
+			
+			<div class="list flex gap-2 items-center">
+				<b class="min-w-24 text-slate-800 font-medium">System</b>
+				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">Laravel</div>
+				</div>
+			</div>
+
+			<div class="list flex gap-2 items-center">
+				<b class="min-w-24 text-slate-800 font-medium">Tools</b>
+				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">Figma</div>
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">VS Code</div>
+				</div>
+			</div>
+			
+			<div class="list flex gap-2 items-center">
+				<b class="min-w-24 text-slate-800 font-medium">Front End</b>
+				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">Tailwind CSS</div>
+				</div>
+			</div>
+			
+			<div class="list flex gap-2 items-center">
+				<b class="min-w-24 text-slate-800 font-medium">Back End</b>
+				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">PHP</div>
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">MySQL</div>
+					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">PgSQL</div>
+				</div>
+			</div>
+
+		</div>
+
         {{content}}
-    </section>
-</article>
-<footer id="post-meta" class="clearfix">
-    <a href="http://twitter.com/{{ site.authorTwitter }}">
-        <img class="avatar" src="{{ "/" | relative_url  }}assets/images/avatar.png">
-        <div>
-            <span class="dark">{{ site.author }}</span>
-            <span>{{ site.description }}</span>
-        </div>
-    </a>
-</footer>
+
+	</div>
 
 <!-- Archive post list -->
 {% if page.archive %}
