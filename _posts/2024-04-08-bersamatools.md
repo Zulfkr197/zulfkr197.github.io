@@ -15,10 +15,10 @@ backend: PHP, MySQL, PgSQL
 		<div class="splide__track">
 			<ul class="splide__list">
 				<li class="splide__slide">
-					<img class="mx-auto" src="cover\bersamatools.png" alt="Bersamatools">
+					<img class="mx-auto" src="{{ "/" | relative_url  }}cover\bersamatools.png" alt="Bersamatools">
 				</li>
 				<li class="splide__slide">
-					<img class="mx-auto" src="uploads\bersamatools\bersamatools_mobile.png" alt="Bersamatools">
+					<img class="mx-auto" src="{{ "/" | relative_url  }}uploads\bersamatools\bersamatools_mobile.png" alt="Bersamatools">
 				</li>
 			</ul>
 		</div>
@@ -61,16 +61,16 @@ backend: PHP, MySQL, PgSQL
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li class="splide__slide">
-							<img class="mx-auto" src="uploads\bersamatools\bersamatools_printitem.png" alt="bersamatools">
+							<img class="mx-auto" src="{{ "/" | relative_url  }}uploads\bersamatools\bersamatools_printitem.png" alt="bersamatools">
 						</li>
 						<li class="splide__slide">
-							<img class="mx-auto" src="uploads\bersamatools\bersamatools_printitem_1.png" alt="bersamatools">
+							<img class="mx-auto" src="{{ "/" | relative_url  }}uploads\bersamatools\bersamatools_printitem_1.png" alt="bersamatools">
 						</li>
 						<li class="splide__slide">
-							<img class="mx-auto" src="uploads\bersamatools\bersamatools_printitem_2.png" alt="bersamatools">
+							<img class="mx-auto" src="{{ "/" | relative_url  }}uploads\bersamatools\bersamatools_printitem_2.png" alt="bersamatools">
 						</li>
 						<li class="splide__slide">
-							<img class="mx-auto" src="uploads\bersamatools\bersamatools_printitem_3.png" alt="bersamatools">
+							<img class="mx-auto" src="{{ "/" | relative_url  }}uploads\bersamatools\bersamatools_printitem_3.png" alt="bersamatools">
 						</li>
 					</ul>
 				</div>
@@ -100,7 +100,7 @@ backend: PHP, MySQL, PgSQL
 				<div class="bg-bar-minimize rounded-full size-3"></div>
 				<div class="bg-bar-maximize rounded-full size-3"></div>
 			</div>
-			<img class="mx-auto" src="uploads\bersamatools\bersamatools_cekitem.png" alt="bersamatools">
+			<img class="mx-auto" src="{{ "/" | relative_url  }}uploads\bersamatools\bersamatools_cekitem.png" alt="bersamatools">
 		</div>
 
 	</div>
@@ -125,7 +125,7 @@ backend: PHP, MySQL, PgSQL
 				<div class="bg-bar-minimize rounded-full size-3"></div>
 				<div class="bg-bar-maximize rounded-full size-3"></div>
 			</div>
-			<img class="mx-auto" src="uploads\bersamatools\bersamatools_struk.png" alt="bersamatools">
+			<img class="mx-auto" src="{{ "/" | relative_url  }}uploads\bersamatools\bersamatools_struk.png" alt="bersamatools">
 		</div>
 
 	</div>
@@ -153,7 +153,7 @@ backend: PHP, MySQL, PgSQL
 				<div class="bg-bar-minimize rounded-full size-3"></div>
 				<div class="bg-bar-maximize rounded-full size-3"></div>
 			</div>
-			<img class="mx-auto" src="uploads\bersamatools\bersamatools_totallaku.png" alt="bersamatools">
+			<img class="mx-auto" src="{{ "/" | relative_url  }}uploads\bersamatools\bersamatools_totallaku.png" alt="bersamatools">
 		</div>
 
 	</div>
@@ -179,7 +179,7 @@ backend: PHP, MySQL, PgSQL
 				<div class="bg-bar-minimize rounded-full size-3"></div>
 				<div class="bg-bar-maximize rounded-full size-3"></div>
 			</div>
-			<img class="mx-auto" src="uploads\bersamatools\bersamatools_trend.png" alt="bersamatools">
+			<img class="mx-auto" src="{{ "/" | relative_url  }}uploads\bersamatools\bersamatools_trend.png" alt="bersamatools">
 		</div>
 
 	</div>
