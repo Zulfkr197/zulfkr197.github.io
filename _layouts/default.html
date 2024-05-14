@@ -15,26 +15,7 @@
 	<header class="header flex pt-16 pb-20 md:pt-24 md:pb-28">
 		<div class="flex flex-col gap-10 md:gap-12 lg:gap-16 mx-auto max-w-screen-xl px-6 sm:px-10 xl:px-0">
 
-			<nav class="menu flex text-center items-center">
-				<ul class="flex gap-10 md:gap-12 text-slate-600 list-none mx-auto font-medium">
-					<li>
-						<a href="/" class="active hover:text-main hover:underline">
-							Home
-						</a>
-					</li>
-					<li>
-						<a href="/project" class="hover:text-main hover:underline">
-							Project
-						</a>
-					</li>
-					<li>
-						<a href="#contact" class="hover:text-main hover:underline">
-							Contact
-						</a>
-					</li>
-				</ul>
-			</nav>
-
+			{% include navigation.html %}
 
 			<div class="hero flex flex-col gap-10 md:gap-12 lg:gap-16 mx-auto items-center relative">
 
@@ -65,19 +46,19 @@
 		<div class="flex flex-col gap-16 mx-auto max-w-screen-xl px-6 sm:px-10 xl:px-0">
 
 			<div class="heading text-center">
-        {% if page.portofolio %}
-  				<h3 class="font-heading leading-relaxed pb-2 text-4xl font-medium">My Project</h3>
-  				<p class="text-slate-600 leading-relaxed">Check out some recent examples of my works <br> that combine creativity and technical skills</p>
-        {% else %}
-				  <h3 class="font-heading leading-relaxed pb-2 text-4xl font-medium">Recent Project</h3>
-				  <p class="text-slate-600 leading-relaxed">Some of the projects we have worked on.<br><a class="font-semibold text-main border-b-2 border-main hover:text-main-hover" href="project.html">See All ⚡</a></p>
-        {% endif %}
+				{% if page.portofolio %}
+					<h3 class="font-heading leading-relaxed pb-2 text-4xl font-medium">My Project</h3>
+					<p class="text-slate-600 leading-relaxed">Check out some recent examples of my works <br> that combine creativity and technical skills</p>
+				{% else %}
+					<h3 class="font-heading leading-relaxed pb-2 text-4xl font-medium">Recent Project</h3>
+					<p class="text-slate-600 leading-relaxed">Some of the projects we have worked on.<br><a class="font-semibold text-main border-b-2 border-main hover:text-main-hover" href="project.html">See All ⚡</a></p>
+				{% endif %}
 			</div>
 
 			<!-- Foreach -->
 			<div class="content">
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
-            {{ content }}          
+					{{ content }}          
 				</div>
 			</div>
 			<!-- Foreach -->
@@ -132,14 +113,8 @@
 
 		</div>
 	</section>
-  
-	<footer class="py-16 md:py-20 lg:py-24 text-slate-500 text-center">
-		<div class="flex flex-col mx-auto max-w-screen-xl px-6 sm:px-10 xl:px-0 leading-relaxed">
-			<p>Design by Me, Using <a class="hover:underline hover:text-main" href="https://www.figma.com/" rel="nofollow noreferrer">Figma</a> & VS Code, <a class="hover:underline hover:text-main" href="https://tailwindcss.com/" rel="nofollow noreferrer">Tailwind</a>, and <a class="hover:underline hover:text-main" href="https://dribbble.com/" rel="nofollow noreferrer">Dribble</a> for inspiration.</p>
-			<p>Mockup by <a class="hover:underline hover:text-main" href="https://www.figma.com/community/file/1161518833995153231" rel="nofollow noreferrer">Gina Chee</a>, Icon by <a class="hover:underline hover:text-main" href="https://ionic.io/ionicons/" rel="nofollow noreferrer">Ionicons</a>, Optimized Image by <a class="hover:underline hover:text-main" href="https://tinypng.com/" rel="nofollow noreferrer">Tinypng</a>, Slidejs by <a class="hover:underline hover:text-main" href="https://splidejs.com/" rel="nofollow noreferrer">splidejs</a></p>
-			<p>© Copyright 2024, All rights reserved</p>
-		</div>
-	</footer>
+
+	{% include footer.html %}
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
     <script>
