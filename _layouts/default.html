@@ -12,32 +12,60 @@
 </head>
 <body class='bg-bone font-body'>
   
-	<header class="header flex pt-16 pb-20 md:pt-24 md:pb-28">
-		<div class="flex flex-col gap-10 md:gap-12 lg:gap-16 mx-auto max-w-screen-xl px-6 sm:px-10 xl:px-0">
+	<header class="header flex {% if page.title %} py-12 {% else %} pt-16 pb-20 md:pt-24 md:pb-28 {% endif %}">
+		<div class="flex flex-col max-w-screen-xl {% if page.title %} md:flex-row items-center gap-8 sm:gap-10 lg:gap-16 mx-auto w-full px-6 sm:px-10 xl:px-0 relative {% else %} gap-10 md:gap-12 lg:gap-16 mx-auto px-6 sm:px-10 xl:px-0 {% endif %}">
 
-			{% include navigation.html %}
+			{% if page.title %}
 
-			<div class="hero flex flex-col gap-10 md:gap-12 lg:gap-16 mx-auto items-center relative">
-
-				<div class="mask absolute inset-0 -top-24 -z-10 opacity-75">
+				<div class="mask absolute opacity-75 inset-x-0 -top-48 -z-10 opacity-75 mx-auto max-w-sm block sm:hidden">
 					<img src="{{ "/" | relative_url  }}assets/images/mask.png">
 				</div>
 
-				<div class="profile relative z-10 pt-16">
-					<img src="{{ "/" | relative_url  }}assets/images/avatar.png" alt="zulfikar">
+				<div class="flex flex-col md:flex-row gap-3 md:gap-6 justify-items-center items-center relative">
+					
+					<div class="profile relative z-10">
+						<img src="{{ "/" | relative_url  }}assets/images/avatar-hero.png" alt="zulfikar">
+					</div>
+					
+					<div class="heading relative z-10">
+						<h2 class="font-heading font-semibold text-xl text-slate-900 leading-tight tracking-wide">ZUL</b></h2>
+					</div>
+					
 				</div>
 
-				<div class="heading text-center relative z-10">
-					<h1 class="font-normal md:font-medium font-heading text-4xl md:text-5xl text-slate-900 leading-tight pb-4 md:tracking-wide">Hi!, I am Zulfikar A <b class="md:block text-main">Wordpress Developer</b></h1>
-					<p class="text-slate-600 tracking-wide">I have 3 years of freelance experience as a WordPress Developer.</p>
-					<p class="text-slate-600 tracking-wide">I am capable of designing WordPress themes and developing WordPress plugins.</p>
-				</div>
+				{% include navigation.html %}
 
 				<div class="btn text-center">
 					<a class="bg-main px-8 text-sm font-medium py-4 rounded text-slate-100 hover:bg-main-hover" href="/CV_ZULFIKAR.pdf">📄 <span class="pl-1"></span>Download CV</span></a>
 				</div>
+			
+			{% else %}
+			
+				{% include navigation.html %}
 
-			</div>
+				<div class="hero flex flex-col gap-10 md:gap-12 lg:gap-16 mx-auto items-center relative">
+	
+					<div class="mask absolute opacity-75 inset-0 -top-24 -z-10">
+						<img src="{{ "/" | relative_url  }}assets/images/mask.png">
+					</div>
+	
+					<div class="profile relative z-10 pt-16">
+						<img src="{{ "/" | relative_url  }}assets/images/avatar.png" alt="zulfikar">
+					</div>
+	
+					<div class="heading text-center relative z-10">
+						<h1 class="font-normal md:font-medium font-heading text-4xl md:text-5xl text-slate-900 leading-tight pb-4 md:tracking-wide">Hi!, I am Zulfikar A <b class="md:block text-main">Wordpress Developer</b></h1>
+						<p class="text-slate-600 tracking-wide">I have 3 years of freelance experience as a WordPress Developer.</p>
+						<p class="text-slate-600 tracking-wide">I am capable of designing WordPress themes and developing WordPress plugins.</p>
+					</div>
+	
+					<div class="btn text-center">
+						<a class="bg-main px-8 text-sm font-medium py-4 rounded text-slate-100 hover:bg-main-hover" href="/CV_ZULFIKAR.pdf">📄 <span class="pl-1"></span>Download CV</span></a>
+					</div>
+	
+				</div>
+			
+			{% endif %}
 
 		</div>
 	</header>
@@ -45,6 +73,7 @@
 	<section class="bg-bone-surface py-24 lg:py-32 border-y border-bone-outline">
 		<div class="flex flex-col gap-16 mx-auto max-w-screen-xl px-6 sm:px-10 xl:px-0">
 
+			{% unless page.title %}
 			<div class="heading text-center">
 				{% if page.portofolio %}
 					<h3 class="font-heading leading-relaxed pb-2 text-4xl font-medium">My Project</h3>
@@ -54,11 +83,12 @@
 					<p class="text-slate-600 leading-relaxed">Some of the projects we have worked on.<br><a class="font-semibold text-main border-b-2 border-main hover:text-main-hover" href="/portofolio">See All ⚡</a></p>
 				{% endif %}
 			</div>
+			{% endunless %}
 
 			<!-- Foreach -->
 			<div class="content">
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
-					{{ content }}          
+				<div class="{% if page.title %} grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 {% else %} article flex flex-col gap-12 {% endif %}">
+					{{ content }}
 				</div>
 			</div>
 			<!-- Foreach -->
