@@ -1,8 +1,19 @@
-<nav class="main-nav">
-    {% if page.url != "/" %}
-        <a href="{{ "/" | relative_url  }}"> <span class="arrow">←</span> Home </a>
-    {% endif %}
- 
-    <a href="#proyek">Proyek</a>
-    <a href="#contact">Kontak</a>
+<nav class="menu flex text-center items-center">
+	<ul class="flex gap-10 md:gap-12 text-slate-600 list-none mx-auto font-medium">
+		<li>
+			<a href="/" class="{% if page.url == '/' %}active{% endif %} hover:text-main hover:underline">
+				Home
+			</a>
+		</li>
+		<li>
+			<a href="/portofolio" class="{% if page.url == '/portofolio' %}active{% endif %} hover:text-main hover:underline">
+				Project
+			</a>
+		</li>
+		<li>
+			<a href="#contact" class="hover:text-main hover:underline">
+				Contact
+			</a>
+		</li>
+	</ul>
 </nav>
