@@ -12,8 +12,8 @@
 </head>
 <body class='bg-bone font-body'>
   
-	<header class="header flex {% if page.title %} py-12 {% else %} pt-16 pb-20 md:pt-24 md:pb-28 {% endif %}">
-		<div class="flex flex-col max-w-screen-xl {% if page.title %} md:flex-row items-center gap-8 sm:gap-10 lg:gap-16 mx-auto w-full px-6 sm:px-10 xl:px-0 relative {% else %} gap-10 md:gap-12 lg:gap-16 mx-auto px-6 sm:px-10 xl:px-0 {% endif %}">
+	<header class="header flex {% if page.title %}py-12{% else %}pt-16 pb-20 md:pt-24 md:pb-28{% endif %}">
+		<div class="flex flex-col max-w-screen-xl {% if page.title %}md:flex-row items-center gap-8 sm:gap-10 lg:gap-16 mx-auto w-full px-6 sm:px-10 xl:px-0 relative{% else %}gap-10 md:gap-12 lg:gap-16 mx-auto px-6 sm:px-10 xl:px-0{% endif %}">
 
 			{% if page.title %}
 
@@ -87,7 +87,7 @@
 
 			<!-- Foreach -->
 			<div class="content">
-				<div class="{% if page.title %} grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 {% else %} article flex flex-col gap-12 {% endif %}">
+				<div class="{% if page.title %}article flex flex-col gap-12{% else %}grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12{% endif %}">
 					{{ content }}
 				</div>
 			</div>
