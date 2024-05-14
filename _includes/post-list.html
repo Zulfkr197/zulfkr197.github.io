@@ -1,6 +1,6 @@
 {% for post in paginator.posts %}
     <div class="article">
-        <div class="thumbnail mb-4 rounded-md bg-bone rounded-md border border-bone-border">
+        <div class="thumbnail w-cover h-cover mb-4 rounded-md bg-bone rounded-md border border-bone-border">
             <a href="{{ "/" | relative_url  }}{{ post.url | remove_first: '/' }}">
                 <img src="{{ post.thumbnail }}" alt="zulfikar">
             </a>
