@@ -9,6 +9,18 @@ archive: true
 			<div class="released inline-block font-medium font-heading bg-main text-white py-1 px-2.5 rounded">{{ page.date | date:"%Y" }}</div>
 			<h1 class="text-slate-800 text-5xl font-medium font-heading pt-2 pb-4">{{ page.title }}</h1>
 			<p class="latar-belakang text-lg leading-relaxed text-slate-600 text-justify">{{ page.description }}</p>
+
+			{% if page.website != "#" %}
+			<div class="pt-4">
+				<a class="inline-flex gap-2 items-center py-2 px-3 pr-2 border border-slate-300 rounded text-sm font-medium text-slate-700 font-heading hover:text-slate-100 hover:bg-main hover:border-main-hover" href="https://sentosalajuenergy.com/" rel="nofollow noreferrer">
+					<span>Live Website</span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 512 512">
+						<path d="M384 224v184a40 40 0 01-40 40H104a40 40 0 01-40-40V168a40 40 0 0140-40h167.48M336 64h112v112M224 288L440 72" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+					</svg>
+				</a>
+			</div>
+			{% endif %}
+			
 		</div>
 
 		<div class="post-group mr-auto lg:ml-auto flex flex-col gap-3 font-heading">
@@ -26,30 +38,42 @@ archive: true
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">Tools</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-				{% assign tools = page.tools | split: ', ' %}
-				{% for row_tools in tools %}
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_tools }}</div>
-				{% endfor %}
+				{% if page.tools != "-" %}
+					{% assign tools = page.tools | split: ', ' %}
+					{% for row_tools in tools %}
+						<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_tools }}</div>
+					{% endfor %}
+				{% else %}
+					-
+				{% endif %}
 				</div>
 			</div>
 			
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">Front End</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-				{% assign frontend = page.frontend | split: ', ' %}
-				{% for row_frontend in frontend %}
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_frontend }}</div>
-				{% endfor %}
+				{% if page.frontend != "-" %}
+					{% assign frontend = page.frontend | split: ', ' %}
+					{% for row_frontend in frontend %}
+						<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_frontend }}</div>
+					{% endfor %}
+				{% else %}
+					-
+				{% endif %}
 				</div>
 			</div>
 			
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">Back End</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-				{% assign backend = page.backend | split: ', ' %}
-				{% for row_backend in backend %}
-					<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_backend }}</div>
-				{% endfor %}
+				{% if page.backend != "-" %}
+					{% assign backend = page.backend | split: ', ' %}
+					{% for row_backend in backend %}
+						<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_backend }}</div>
+					{% endfor %}
+				{% else %}
+					-
+				{% endif %}
 				</div>
 			</div>
 
