@@ -5,6 +5,9 @@ description     : Plugin Cek Keaslian Produk merupakan plugin yang berfungsi unt
 site            : https://creamzamzamjk.com/
 thumbnail       : cover/plugin_license.png
 type			: Wordpress
+tools			: VS Code
+frontend		: Tailwindcss
+backend			: PHP, MySQL
 ---
 
 Creamzazamjk mengalami masalah dengan maraknya pemalsuan produk sehingga creamzamzamjk membuat website sebagai situs cek pemalsuan produk menggunakan kode hologram yang ada pada tiap kemasan produk.

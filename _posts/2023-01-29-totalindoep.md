@@ -5,6 +5,9 @@ description     : Totalindoep adalah sebuah website yang memfasilitasi proses Pe
 site            : http://timpengurus-totalindoep.com/
 thumbnail       : cover/timpengurus_pttotalindo.png
 type			: Wordpress
+tools			: VS Code
+frontend		: Tailwind CSS, Elementor
+backend			: PHP
 ---
 
 Bertugas membuat tema wordpress totalindoep, dengan menggunakan elementor sebagai front end dan membuat kostum plugin widget elementor untuk tema.

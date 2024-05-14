@@ -5,6 +5,9 @@ description     : SLE Foundation merupakan situs lembaga filantropi sekaligus le
 site            : http://slefoundation.id/
 thumbnail       : cover/sle_foundation.png
 type			: Wordpress
+tools			: VS Code
+frontend		: Tailwind CSS, Elementor
+backend			: PHP
 ---
 
 Bertugas mendesain ulang tema wordpress sesuai keinginan client, membuat kostum plugin widget elementor.

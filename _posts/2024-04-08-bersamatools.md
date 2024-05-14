@@ -5,4 +5,7 @@ description		: Tools yang dibuat untuk memudahkan untuk pengguna aplikasi IPOS 5
 site			: #
 thumbnail		: cover/bersamatools.png
 type			: Laravel
+tools			: Figma, VS Code
+frontend		: Tailwind CSS
+backend			: PHP, MySQL, PgSQL
 ---

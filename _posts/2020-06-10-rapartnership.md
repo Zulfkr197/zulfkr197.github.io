@@ -5,4 +5,7 @@ description     : Resha Agriansyah Partnership merupakan website profil firma hu
 site            : https://rapartnership.com/
 thumbnail       : cover/rapartnership.png
 type			: Wordpress
+tools			: VS Code
+frontend		: -
+backend			: -
 ---
