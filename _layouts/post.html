@@ -38,7 +38,7 @@ archive: true
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">Tools</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-				{% if page.tools != "-" %}
+				{% if page.tools != "Empty" %}
 					{% assign tools = page.tools | split: ', ' %}
 					{% for row_tools in tools %}
 						<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_tools }}</div>
@@ -52,7 +52,7 @@ archive: true
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">Front End</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-				{% if page.frontend != "-" %}
+				{% if page.frontend != "Empty" %}
 					{% assign frontend = page.frontend | split: ', ' %}
 					{% for row_frontend in frontend %}
 						<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_frontend }}</div>
@@ -66,7 +66,7 @@ archive: true
 			<div class="list flex gap-2 items-center">
 				<b class="min-w-24 text-slate-800 font-medium">Back End</b>
 				<div class="list-group text-sm text-slate-500 whitespace-nowrap flex gap-1">
-				{% if page.backend != "-" %}
+				{% if page.backend != "Empty" %}
 					{% assign backend = page.backend | split: ', ' %}
 					{% for row_backend in backend %}
 						<div class="list-label font-medium px-3 py-1 rounded border border-bone-border">{{ row_backend }}</div>
