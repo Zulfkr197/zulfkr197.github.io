@@ -27,7 +27,7 @@ defaults:
             layout: default
     -
         scope:
-            path: "portofolio" # empty string for all files
+            path: "" # empty string for all files
             type: posts
         values:
             layout: post
