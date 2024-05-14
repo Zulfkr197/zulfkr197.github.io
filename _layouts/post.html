@@ -85,6 +85,8 @@ archive: true
 	{% if content %}
 		{{ content }}
 	{% else %}
+	    <!-- Output debugging untuk memeriksa apakah content kosong atau tidak terdefinisi -->
+	    <p>Content: {{ content }}</p>
 		<div class="thumbnail rounded-md bg-thumb rounded-md overflow-hidden border border-bone-outline shadow-sm">
 			<img class="mx-auto" src="{{ page.thumbnail }}">
 		</div>
