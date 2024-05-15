@@ -14,7 +14,7 @@ backend: PHP
 	<div class="splide__track">
 		<ul class="splide__list">
 			<li class="splide__slide">
-				<img class="mx-auto" src="\cover\timpengurus_pttotalindo.png" alt="Bersamatools">
+				<img class="mx-auto" src="\cover\timpengurus_pttotalindo.png">
 			</li>
 		</ul>
 	</div>
